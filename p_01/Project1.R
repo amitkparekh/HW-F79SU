@@ -53,8 +53,8 @@ surv.KM <- survfit( Surv(time, censor) ~ 1, conf.type = "plain" )
 
 surv.KM.est <- stepfun(surv.KM$time, c(1, surv.KM$surv))
 # surv.KM.est(0:0.5:10)
-#surv.KM.est(1.2)
-
+# surv.KM.est(1.2)
+# 1-surv.KM.est(2)
 
 ######
 ## Question 3 
@@ -113,9 +113,9 @@ abline(h = 0, col="blue")
 
 lrtTest <- function(coxTest, sig) {
 	if (summary(coxTest)$logtest["pvalue"] < sig) {
-		1
+		1 # reject
 	} else {
-		0
+		0 # do not reject
 	}
 }
 
