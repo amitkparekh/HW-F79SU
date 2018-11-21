@@ -16,9 +16,9 @@ graphics.off()
 # Load R file 
 # The following line needs to be changed if your
 # R file is not called Project1_sub.R
-source("p_01/Project1.R")
+source("Project3.r")
 	
 # Check that all answers for this project are
 # correctly defined
-print(c(AnswerQ1, AnswerQ2, AnswerQ3, AnswerQ5a, AnswerQ5b))
+print(c(AnswerQ1a, AnswerQ1b, AnswerQ3, AnswerQ4a, AnswerQ4b, AnswerQ5a, AnswerQ5b))
 
